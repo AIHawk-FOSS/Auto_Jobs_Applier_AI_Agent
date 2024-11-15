@@ -19,8 +19,8 @@ Join our community: [Telegram](https://t.me/AIhawkCommunity) (for Normal user) |
 
 </div>
 
-**Creator** [feder-cr](https://github.com/feder-cr), Co-Founder of Ai Hawk </br>
-As AI Hawk is focusing on their proprietary product - solving problems in hiring for companies, currently this project is led, managed, and maintained by a group of open-source contributors, with a focus on building tools to help job seekers land the jobs they deserve.
+**Creator** [feder-cr](https://github.com/feder-cr), Co-Founder of AIHawk </br>
+As AIHawk is focusing on their proprietary product - solving problems in hiring for companies, currently this project is led, managed, and maintained by a group of open-source contributors, with a focus on building tools to help job seekers land the jobs they deserve.
 
 **Project Maintainers / Leads**: [surapuramakhil](https://github.com/surapuramakhil), [sarob](https://github.com/sarob), [cjbbb](https://github.com/cjbbb)
 
@@ -224,6 +224,17 @@ This file defines your job search parameters and bot behavior. Each section cont
     positions:
       - Software Developer
       - Data Scientist
+    ```
+
+- `job_description_keywords_whitelist:`
+  - List keywords to look for in the job description, for example, "chromium browser". This field is optional.
+  - Only use this field to find jobs that require specific technologies, products, or skills that is not mentioned in the job title.
+  - Warning: Any jobs without matching keywords in the job description will be skipped.
+  - Example:
+
+    ```yaml
+    job_description_keywords_whitelist:
+      - chromium browser
     ```
 
 - `locations:`
